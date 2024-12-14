@@ -1,0 +1,22 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root{
+    --PrimaryColor: rgb(221, 26, 26);
+    --SecondaryColor : blue;
+    --BorderColor:yellow;
+    --TextColor: rgb(255, 255, 255);
+}
+
+.LinkNavegation{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-block: 10px;
+}
+
+.LinkItem{
+    color: white;
+    text-decoration: none;
+}
