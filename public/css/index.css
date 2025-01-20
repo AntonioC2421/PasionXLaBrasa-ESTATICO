@@ -1,22 +1,45 @@
-*{
+* {
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root{
-    --PrimaryColor: rgb(221, 26, 26);
-    --SecondaryColor : blue;
-    --BorderColor:yellow;
+:root {
+    --PrimaryColor: rgba(255, 85, 0, 0.532);
+    --SecondaryColor: blue;
+    --BorderColor: rgba(164, 164, 147, 0.637);
     --TextColor: rgb(255, 255, 255);
 }
 
-.LinkNavegation{
+header {
+    text-align: center;
+    background-color: var(--PrimaryColor);
+}
+
+header,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.Banner img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.cardsinfo{
+    padding-block: 10px;
+}
+
+.LinkNavegation {
     background-color: black;
     display: flex;
     justify-content: space-evenly;
     padding-block: 10px;
 }
 
-.LinkItem{
+.LinkItem {
     color: white;
     text-decoration: none;
 }
