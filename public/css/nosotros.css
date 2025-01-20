@@ -1,0 +1,17 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --PrimaryColor: rgba(255, 85, 0, 0.532);
+    --SecondaryColor: blue;
+    --BorderColor: rgba(164, 164, 147, 0.637);
+    --TextColor: rgb(255, 255, 255);
+}
+
+h1{
+    color: blue;
+}
