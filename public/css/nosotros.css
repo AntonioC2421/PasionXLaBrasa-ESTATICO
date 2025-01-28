@@ -12,6 +12,17 @@
     --TextColor: rgb(255, 255, 255);
 }
 
-h1{
-    color: blue;
+.conteNosotros{
+    background-color: aqua;
+}
+
+.seccion {
+    display: flex;
+    border: 1px solid black;
+}
+
+.imgNosotros{
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
 }
