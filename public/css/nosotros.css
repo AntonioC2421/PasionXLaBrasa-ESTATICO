@@ -12,17 +12,50 @@
     --TextColor: rgb(255, 255, 255);
 }
 
-.conteNosotros{
-    background-color: aqua;
-}
-
-.seccion {
+.conteNosotros {
     display: flex;
-    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 10px;
 }
 
-.imgNosotros{
-    width: 100px;
-    height: 150px;
-    object-fit: contain;
+.card1 {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.card2 {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideOn 1.5s ease-in-out forwards;
+}
+
+
+@keyframes slideOn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media(max-width:767px){
+    .img-fluid {
+        max-height: 200px;
+    }
 }

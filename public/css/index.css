@@ -1,18 +1,15 @@
-.contenedorPri{
+.contenedorPri {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 columnas en desktop */
+    gap: 15px; /* Espaciado entre tarjetas */
+    padding: 20px;
+    justify-content: center;
+    justify-items: center;
     place-content: center;
-}
-
-.cardsinfo {
-    margin-block: 1em;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 /* From Uiverse.io by Yaya12085 */
 .card {
-    margin-block: 1rem;
-    margin-inline: 0.08rem;
     max-width: 300px;
     border-radius: 0.5rem;
     background-color: #fff;
