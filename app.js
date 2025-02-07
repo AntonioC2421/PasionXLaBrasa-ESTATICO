@@ -25,10 +25,6 @@ app.get("/Promociones", (req, res) => {
     res.render("Promociones")
 });
 
-app.get("/Ubicanos", (req, res) => {
-    res.render("Ubicacion")
-});
-
 app.listen(3000, (req, res) => {
     console.log('corriendo en el puerto 3000')
 });

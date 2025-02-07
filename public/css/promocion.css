@@ -1,0 +1,84 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --PrimaryColor: rgba(77, 37, 0, 0.397);
+    --SecondaryColor: blue;
+    --BorderColor: rgba(187, 187, 183, 0.205);
+    --TextColor: rgb(255, 255, 255);
+}
+
+.content__Sale{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); /* 3 columnas en desktop */
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    place-content: center;
+    padding-block: 50px;
+}
+
+/* From Uiverse.io by Javierrocadev */
+.card {
+    width: 380px;
+    height: 400px;
+    background: var(--PrimaryColor);
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid var(--BorderColor);
+}
+
+.card::before {
+    content: attr(data-discount);
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+    left: -20px;
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    font-size: 2em;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    transform: rotate(40deg);
+}
+
+.imgcard {
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0.2rem;
+}
+
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card__content span {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+@media(max-width:790px){
+    .card {
+        width: 90%;
+    }
+}

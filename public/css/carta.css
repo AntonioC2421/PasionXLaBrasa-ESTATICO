@@ -1,0 +1,38 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --PrimaryColor: rgba(77, 37, 0, 0.397);
+    --SecondaryColor: blue;
+    --BorderColor: rgba(187, 187, 183, 0.205);
+    --TextColor: rgb(255, 255, 255);
+}
+
+.SectionCarta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.carta{
+    background-color: var(--PrimaryColor);
+    margin-block: 1rem;
+    width: 75%;
+    min-height: 850px;
+}
+.card-header{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+.card-body{
+    padding: 25px;
+}

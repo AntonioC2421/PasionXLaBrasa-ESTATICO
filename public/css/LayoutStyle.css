@@ -45,8 +45,14 @@ header h4 {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     padding-block: 1rem;
     border-top: 1px solid var(--BorderColor);
+}
+
+.Copy{
+    grid-column: span 2;
 }
 
 /* From Uiverse.io by wilsondesouza */
